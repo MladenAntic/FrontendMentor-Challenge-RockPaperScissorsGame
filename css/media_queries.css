@@ -1,0 +1,753 @@
+@media screen and (max-width: 550px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  #header {
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  #main-container {
+    width: 80%;
+  }
+
+  .logo {
+    width: 6.25rem;
+  }
+
+  .score {
+    width: 4.6875rem;
+  }
+
+  .score-text {
+    font-size: 0.5rem;
+  }
+
+  .score-number {
+    font-size: 3.5rem;
+  }
+
+  .bg-triangle {
+    margin-top: 7.8125rem;
+  }
+
+  .advanced-mode {
+    margin-top: 6.25rem;
+  }
+
+  .icon {
+    width: 9.375rem;
+    height: 9.375rem;
+    border-width: 1.0938rem;
+  }
+
+  .advanced-mode .icon {
+    width: 7.8125rem;
+    height: 7.8125rem;
+  }
+
+  .icon-paper-basic {
+    top: 15%;
+    left: -5%;
+  }
+
+  .icon-scissors-basic {
+    top: 15%;
+    right: -5%;
+  }
+
+  .icon-rock-basic {
+    bottom: 2.5%;
+    left: 26.5%;
+  }
+
+  .icon-paper-advanced {
+    top: 12.5%;
+    left: 70%;
+  }
+
+  .icon-scissors-advanced {
+    top: -22.5%;
+    left: 33%;
+  }
+
+  .icon-rock-advanced {
+    bottom: -15%;
+    left: 60%;
+  }
+
+  .icon-spock {
+    top: 12.5%;
+    left: -5%;
+  }
+
+  .icon-lizard {
+    bottom: -15%;
+    left: 5%;
+  }
+
+  .rules {
+    right: initial;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2.5%;
+    font-size: 0.75rem;
+    width: 80%;
+  }
+
+  .game-mode {
+    left: 50%;
+    bottom: -3.5%;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    width: 80%;
+  }
+
+  #rules-modal {
+    padding: 1.25rem 2.5rem;
+  }
+
+  .image-rules {
+    width: 15.625rem;
+  }
+
+  .rules-message {
+    font-size: 0.75rem;
+  }
+
+  .read-the-rules {
+    right: 40%;
+    bottom: 9%;
+  }
+
+  .read-the-rules-text {
+    font-size: 1.25rem;
+  }
+
+  .step-2 {
+    gap: 3.125rem;
+    margin-top: 3.125rem;
+  }
+
+  .step-2-text {
+    font-size: 0.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .result-container {
+    display: none;
+  }
+
+  .result-container-mobile {
+    margin-top: 1.875rem;
+    display: none;
+  }
+
+  .result-mobile {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 4.5rem;
+    margin-bottom: 0.9375rem;
+    letter-spacing: 0.3125rem;
+  }
+
+  .play-again-mobile {
+    display: block;
+    width: 75%;
+    border: none;
+    outline: none;
+    padding: 0.9375rem 0;
+    margin: 0 auto;
+    border-radius: 0.3125rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: hsl(214, 47%, 23%);
+    letter-spacing: 0.125rem;
+    cursor: pointer;
+  }
+
+  .play-again:hover {
+    color: hsl(349, 70%, 56%);
+  }
+
+  .announcement {
+    font-size: 2.5rem;
+  }
+
+  .finish-game .play-again {
+    width: 50%;
+  }
+}
+
+@media screen and (width: 280px) {
+  #header {
+    padding: 0.625rem;
+  }
+
+  .logo {
+    width: 4.6875rem;
+  }
+
+  .score {
+    width: 3.75rem;
+  }
+
+  .score-text {
+    font-size: 0.375rem;
+  }
+
+  .bg-triangle {
+    width: 12.5rem;
+  }
+
+  .icon {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-width: 1.0938rem;
+  }
+
+  .icon-paper-basic {
+    top: 25%;
+    left: -5%;
+  }
+
+  .icon-scissors-basic {
+    top: 25%;
+    right: -5%;
+  }
+
+  .icon-rock-basic {
+    bottom: 1%;
+  }
+
+  #rules-modal {
+    padding: 0.9375rem 1.875rem;
+  }
+
+  .image-rules {
+    width: 10.9375rem;
+  }
+
+  .rules-message {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (width: 360px) {
+  .advanced-mode {
+    margin-left: -0.9375rem;
+  }
+
+  .icon-paper-basic {
+    left: -8%;
+  }
+
+  .icon-scissors-basic {
+    right: -8%;
+  }
+}
+
+@media screen and (width: 540px) {
+  .advanced-mode {
+    margin-top: 5.625rem;
+    margin-left: 1.25rem;
+  }
+
+  .score {
+    width: 6.25rem;
+  }
+
+  .score-text {
+    font-size: 0.625rem;
+  }
+
+  .icon-paper-basic {
+    left: 5%;
+  }
+
+  .icon-scissors-basic {
+    right: 5%;
+  }
+
+  .icon-rock-basic {
+    bottom: 2%;
+    left: 33%;
+  }
+
+  .read-the-rules {
+    left: 43%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 550px) {
+  .score {
+    width: 6.25rem;
+  }
+
+  .score-text {
+    font-size: 0.625rem;
+  }
+
+  .bg-triangle {
+    margin-top: 6.25rem;
+  }
+
+  .icon-paper-basic {
+    top: 10%;
+    left: 5%;
+  }
+
+  .icon-scissors-basic {
+    top: 10%;
+    right: 5%;
+  }
+
+  .icon-rock-basic {
+    left: 32%;
+  }
+
+  .read-the-rules {
+    left: 42.5%;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 700px) {
+  #header {
+    width: 90%;
+  }
+
+  #main-container {
+    width: 60%;
+  }
+
+  .logo {
+    width: 7.8125rem;
+  }
+
+  .score {
+    width: 7.8125rem;
+  }
+
+  .score-text {
+    font-size: 0.75rem;
+  }
+
+  .score-number {
+    font-size: 4rem;
+  }
+
+  .advanced-mode {
+    margin-top: 6.25rem;
+  }
+
+  .icon {
+    width: 10.9375rem;
+    height: 10.9375rem;
+  }
+
+  .icon-paper-basic {
+    top: 20%;
+    left: -5%;
+  }
+
+  .icon-scissors-basic {
+    top: 20%;
+    right: -5%;
+  }
+
+  .icon-rock-basic {
+    bottom: -3%;
+    left: 26.5%;
+  }
+
+  .icon-paper-advanced {
+    top: 10%;
+    left: 70%;
+  }
+
+  .icon-scissors-advanced {
+    top: -22.5%;
+    left: 31%;
+  }
+
+  .icon-rock-advanced {
+    bottom: -15%;
+    left: 55%;
+  }
+
+  .icon-spock {
+    top: 10%;
+    left: -10%;
+  }
+
+  .icon-lizard {
+    bottom: -15%;
+    left: 2.5%;
+  }
+
+  .read-the-rules {
+    right: 5.5%;
+  }
+
+  .rules {
+    right: initial;
+    right: 5%;
+    bottom: 2.5%;
+    font-size: 0.875rem;
+  }
+
+  .game-mode {
+    left: 5%;
+    font-size: 0.875rem;
+  }
+
+  .step-2-text {
+    font-size: 0.75rem;
+  }
+
+  .result-container {
+    display: none;
+  }
+
+  .result-container-mobile {
+    margin-top: 1.875rem;
+    display: none;
+  }
+
+  .result-mobile {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 4.5rem;
+    margin-bottom: 0.9375rem;
+    letter-spacing: 0.3125rem;
+  }
+
+  .play-again-mobile {
+    display: block;
+    width: 75%;
+    border: none;
+    outline: none;
+    padding: 0.9375rem 0;
+    margin: 0 auto;
+    border-radius: 0.3125rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: hsl(214, 47%, 23%);
+    letter-spacing: 0.125rem;
+    cursor: pointer;
+  }
+
+  .play-again:hover {
+    color: hsl(349, 70%, 56%);
+  }
+
+  .announcement {
+    font-size: 2.5rem;
+  }
+
+  .finish-game .play-again {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 850px) {
+  #header {
+    width: 80%;
+  }
+
+  #main-container {
+    width: 60%;
+  }
+
+  .score {
+    width: 9.375rem;
+  }
+
+  .score-text {
+    font-size: 0.875rem;
+  }
+
+  .advanced-mode {
+    margin-top: 6.25rem;
+  }
+
+  .rules {
+    right: initial;
+    right: 5%;
+    bottom: 2.5%;
+    font-size: 0.875rem;
+  }
+
+  .read-the-rules {
+    bottom: 9%;
+  }
+
+  .game-mode {
+    left: 5%;
+    font-size: 0.875rem;
+  }
+
+  .icon {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+
+  .icon-paper-basic {
+    top: 20%;
+    left: 2%;
+  }
+
+  .icon-scissors-basic {
+    top: 20%;
+    right: 2%;
+  }
+
+  .icon-rock-basic {
+    bottom: -10%;
+    left: 29%;
+  }
+
+  .icon-paper-advanced {
+    top: 10%;
+    left: 67.5%;
+  }
+
+  .icon-scissors-advanced {
+    top: -22.5%;
+    left: 33%;
+  }
+
+  .icon-rock-advanced {
+    bottom: -15%;
+    left: 55%;
+  }
+
+  .icon-spock {
+    top: 10%;
+    left: -2.5%;
+  }
+
+  .icon-lizard {
+    bottom: -15%;
+    left: 10%;
+  }
+
+  .read-the-rules {
+    right: 5.5%;
+  }
+
+  .step-2-text {
+    font-size: 0.875rem;
+  }
+
+  .result-container-mobile {
+    margin-top: 1.875rem;
+    display: none;
+  }
+
+  .result-mobile {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 4.5rem;
+    margin-bottom: 0.9375rem;
+    letter-spacing: 0.3125rem;
+  }
+
+  .play-again-mobile {
+    display: block;
+    width: 75%;
+    border: none;
+    outline: none;
+    padding: 0.9375rem 0;
+    margin: 0 auto;
+    border-radius: 0.3125rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: hsl(214, 47%, 23%);
+    letter-spacing: 0.125rem;
+    cursor: pointer;
+  }
+
+  .announcement {
+    font-size: 2.5rem;
+  }
+
+  .finish-game .play-again {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1000px) {
+  #header {
+    width: 80%;
+  }
+
+  #main-container {
+    width: 60%;
+  }
+
+  .score-text {
+    font-size: 0.875rem;
+  }
+
+  .advanced-mode {
+    margin-top: 6.25rem;
+  }
+
+  .icon {
+    width: 10.9375rem;
+    height: 10.9375rem;
+  }
+
+  .icon-paper-basic {
+    top: 20%;
+    left: 9%;
+  }
+
+  .icon-scissors-basic {
+    top: 20%;
+    right: 9%;
+  }
+
+  .icon-rock-basic {
+    bottom: -5%;
+    left: 35%;
+  }
+
+  .icon-paper-advanced {
+    top: 10%;
+    left: 67.5%;
+  }
+
+  .icon-scissors-advanced {
+    top: -22.5%;
+    left: 33%;
+  }
+
+  .icon-rock-advanced {
+    bottom: -15%;
+    left: 55%;
+  }
+
+  .icon-spock {
+    top: 10%;
+    left: 0%;
+  }
+
+  .icon-lizard {
+    bottom: -15%;
+    left: 10%;
+  }
+
+  .read-the-rules {
+    right: 5%;
+  }
+
+  .step-2 {
+    width: 150%;
+    margin-left: -8.4375rem;
+  }
+
+  .step-2-text {
+    font-size: 1.125rem;
+  }
+
+  .result {
+    font-size: 2rem;
+  }
+
+  .play-again {
+    font-size: 0.625rem;
+  }
+
+  .announcement {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  #header {
+    width: 80%;
+  }
+
+  #main-container {
+    width: 60%;
+  }
+
+  .score-text {
+    font-size: 0.875rem;
+  }
+
+  .icon {
+    width: 10.9375rem;
+    height: 10.9375rem;
+  }
+
+  .icon-paper-basic {
+    top: 20%;
+    left: 15%;
+  }
+
+  .icon-scissors-basic {
+    top: 20%;
+    right: 15%;
+  }
+
+  .icon-rock-basic {
+    bottom: -5%;
+    left: 38%;
+  }
+
+  .icon-paper-advanced {
+    top: 10%;
+    left: 62.5%;
+  }
+
+  .icon-scissors-advanced {
+    top: -22.5%;
+    left: 37.5%;
+  }
+
+  .icon-rock-advanced {
+    bottom: -15%;
+    left: 55%;
+  }
+
+  .icon-spock {
+    top: 10%;
+    left: 12.5%;
+  }
+
+  .icon-lizard {
+    bottom: -15%;
+    left: 20%;
+  }
+
+  .read-the-rules {
+    right: 5%;
+  }
+
+  .step-2 {
+    width: 150%;
+    margin-left: -8.4375rem;
+  }
+
+  .announcement {
+    font-size: 4rem;
+  }
+
+  .finish-game .play-again {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .step-2 {
+    width: 125%;
+    margin-left: -7.8125rem;
+  }
+}

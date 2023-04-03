@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media_queries.css" />
+  </head>
+  <body>
+    <header id="header">
+      <img src="images/logo.svg" class="logo" alt="Logo" />
+
+      <div class="score">
+        <span class="score-text"> Your Score </span>
+        <span class="score-number your-score-number">0</span>
+      </div>
+
+      <div class="score">
+        <span class="score-text computer-score-text"> Computer Score </span>
+        <span class="score-number computer-score-number">0</span>
+      </div>
+    </header>
+
+    <main id="main-container">
+      <div class="step-1">
+        <div class="basic-mode">
+          <img
+            src="images/bg-triangle.svg"
+            class="bg-triangle"
+            alt="Bg Triangle"
+          />
+          <div class="icon icon-paper-basic pick-basic-mode">
+            <img src="images/icon-paper.svg" alt="Icon Paper" />
+          </div>
+          <div class="icon icon-scissors-basic pick-basic-mode">
+            <img src="images/icon-scissors.svg" alt="Icon Scissors" />
+          </div>
+          <div class="icon icon-rock-basic pick-basic-mode">
+            <img src="images/icon-rock.svg" alt="Icon Rock" />
+          </div>
+        </div>
+        <div class="advanced-mode">
+          <img
+            src="images/bg-pentagon.svg"
+            class="bg-pentagon"
+            alt="Bg Pentagon"
+          />
+          <div class="icon icon-paper-advanced pick-advanced-mode">
+            <img src="images/icon-paper.svg" alt="Icon Paper" />
+          </div>
+          <div class="icon icon-scissors-advanced pick-advanced-mode">
+            <img src="images/icon-scissors.svg" alt="Icon Scissors" />
+          </div>
+          <div class="icon icon-rock-advanced pick-advanced-mode">
+            <img src="images/icon-rock.svg" alt="Icon Rock" />
+          </div>
+          <div class="icon icon-spock pick-advanced-mode">
+            <img src="images/icon-spock.svg" alt="Icon Spock" />
+          </div>
+          <div class="icon icon-lizard pick-advanced-mode">
+            <img src="images/icon-lizard.svg" alt="Icon Lizard" />
+          </div>
+        </div>
+      </div>
+
+      <div class="step-2">
+        <div class="you-picked">
+          <h3 class="step-2-text">You Picked</h3>
+          <div class="icon icon-you-picked">
+            <img src="images/icon-paper.svg" alt="Icon Picked" />
+          </div>
+        </div>
+        <div class="result-container">
+          <h2 class="result"></h2>
+          <button class="play-again">
+            <i class="fa-solid fa-arrow-left"></i> Pick Again
+          </button>
+        </div>
+        <div class="house-picked">
+          <h3 class="step-2-text">The House Picked</h3>
+          <div class="icon icon-house-picked">
+            <img src="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="result-container-mobile">
+        <h2 class="result-mobile">You Lose</h2>
+        <button class="play-again-mobile">
+          <i class="fa-solid fa-arrow-left"></i> Pick Again
+        </button>
+      </div>
+
+      <div class="finish-game">
+        <h1 class="announcement"></h1>
+        <button class="play-again">Play Again</button>
+      </div>
+    </main>
+
+    <div class="overlay"></div>
+
+    <div class="read-the-rules">
+      <span class="read-the-rules-text">Read The</span>
+      <i class="fa-sharp fa-solid fa-arrow-down"></i>
+    </div>
+
+    <section id="rules-modal">
+      <div class="modal-top">
+        <h2 class="rules-text">Rules</h2>
+        <img src="images/icon-close.svg" class="icon-close" alt="Icon Close" />
+      </div>
+      <img src="images/image-rules.svg" class="image-rules" alt="Image Rules" />
+      <p class="rules-message">
+        *The first who collects 5 points, wins the game!*
+      </p>
+    </section>
+
+    <button class="rules">Rules</button>
+
+    <button class="game-mode">Advanced Mode</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/basicMode.js"></script>
+    <script src="js/advancedMode.js"></script>
+  </body>
+</html>
